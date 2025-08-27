@@ -15,7 +15,7 @@ def create_member():
     id = input("Enter membership ID: ")
     age = input("Enter the member`s age: ")
     status = input("Enter membership status Or click enter: ").lower()
-    if status != "active":
+    if status == "":
         status = "inactive"
     return Member(fname, lname, id, age, status)
 
